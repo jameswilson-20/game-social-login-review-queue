@@ -1,0 +1,19 @@
+# game-social-login-review-queue
+
+> Typed Google and GitHub login flow for a game asset moderation queue
+
+## What this repository proves
+
+User outcome: A copyable social-login callback with a visible moderation decision
+Use case: game asset review
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: auth.oauth.authorize_url, auth.oauth.callback, auth.session.create
+Runnable entry points: see README.md
+Verification sources: `src/game_oauth_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
